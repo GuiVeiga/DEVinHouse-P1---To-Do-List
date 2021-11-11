@@ -1,0 +1,109 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+}
+
+main {
+    margin: 120px auto;
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+main header {
+    text-align: center;
+}
+
+main .inputField {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.inputField input {
+    outline: none;
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+
+.inputField button {
+    width: 60px;
+    height: 43px;
+    border: none;
+    outline: none;
+    background: #8E49E8;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+main .lista {
+
+}
+
+.lista li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+}
+
+.lista span{
+    position: absolute;
+    right: 0px;
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+ul.lista > li.feito > label {
+    text-decoration: line-through;
+  }
+
+.dark {
+    background-color: #282828;
+    color: #f0f0f0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 15mm;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+footer p, footer a {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75rem;
+    transition: color 200ms;
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
