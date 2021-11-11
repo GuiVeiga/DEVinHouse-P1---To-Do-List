@@ -8,7 +8,6 @@
     <title>TO-DO List - Lista de Afazeres</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -19,14 +18,12 @@
 
         <!-- campo de texto para entrada na lista -->
         <div class="inputField">
-            <input id="campo" name="campo" type="text" placeholder="Adicione uma tarefa na lista aqui!">
-
+            <input id="campoEntrada" name="campoEntrada" type="text" placeholder="Adicione uma tarefa na lista aqui!">
             <button id="btnAdd">+</button>
-
             <!-- <input id="btnClear" type="button" value="Limpar Campo"> -->
         </div>
 
-        <!-- lista como exemplo -->
+        <!-- lista como exemplo
         <ul class="lista">
             <li class="feito">
                 <input id="chk-0" type="checkbox" checked>
@@ -39,6 +36,10 @@
                 <span><button>&times;</button></span>
             </li>
         </ul>
+        -->
+
+        <ul id="listaDeAtividades" class="lista"></ul>
+
     </main>
 
     <footer class="dark center">
@@ -48,6 +49,8 @@
             <a href="https://www.linkedin.com/in/guilherme-veiga-98282221b/" target="_blank">LinkedIn</a>
         </p>
     </footer>
+
+    <script src="/scripts/script.js"></script>
 
 </body>
 
