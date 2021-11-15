@@ -47,10 +47,6 @@ main .inputField {
     margin-left: 5px;
 }
 
-main .lista {
-
-}
-
 .lista li{
     list-style: none;
     height: 45px;
@@ -71,10 +67,6 @@ main .lista {
     border-radius: 0 3px 3px 0;
     cursor: pointer;
 }
-
-ul.lista > li.feito > label {
-    text-decoration: line-through;
-  }
 
 .dark {
     background-color: #282828;
@@ -106,4 +98,42 @@ footer p, footer a {
 
 footer a:hover {
     color: rgba(255, 255, 255, 0.9);
+}
+
+.todoList_item{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+}
+.todoList_item > div {
+    width: 80%;
+}
+.todoList_item:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+.todoList_item > input[type='text'] {
+    border: none;
+    width: 80%;
+    font: inherit;
+}
+
+.todoList_item > input[type='button'],
+.todoList_item > input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    font: inherit;
+}
+
+
+.todoList_item > input[type='checkbox']:checked  + div {
+    text-decoration:line-through;
 }
