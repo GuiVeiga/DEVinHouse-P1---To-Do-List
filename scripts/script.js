@@ -67,7 +67,12 @@ const clickTask = (event) => {
     const element = event.target;
     if (element.type === 'button') {                                            // Se o elemento pressioando for um botão, remove a tarefa da lista
         const id = element.dataset.id;
-        removeTask(id);
+
+        let confirma = confirm("Deseja excluir esta tarefa da lista?");         // Variável para confirmar se o usuário deseja excluir a tarefa da lista
+
+        if (confirma == true) {
+            removeTask(id);
+        }
     }
     else if (element.type === 'checkbox') {                                     // Se o elemento pressionado for uma checkbox, marca a tarefa como feita
         const id = element.dataset.id;
