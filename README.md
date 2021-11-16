@@ -1,6 +1,7 @@
 <h1> DEVinHouse Projeto 1 - To-Do List </h1>
 <P> Este projeto consistem em uma To Do List, ou uma Lista de Afarezes, desenvolvido para a primeira avaliação do DEVinHouse 2021 - Turma Softplan. 🤓
-  
+ 
+<br><br>
 <p>OBS: Utilizar LiveServer para verificar o seu funcionamento.
 
 <h2> Andamento do Projeto </h2>
