@@ -5,7 +5,7 @@
 <p>OBS: Utilizar LiveServer para verificar o seu funcionamento.</p>
 <br>
 
-<p>Link para acessar o projeto pelo Verce: https://dev-in-house-p1-to-do-list.vercel.app/ </p>
+<p>Link para acessar o projeto pelo Vercel: https://dev-in-house-p1-to-do-list.vercel.app/ </p>
 
 <h2> Andamento do Projeto </h2>
 <p>Iniciado em: 11/11/2021</p>
