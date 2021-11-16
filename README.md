@@ -10,6 +10,7 @@
 <h2> Andamento do Projeto </h2>
 <p>Iniciado em: 11/11/2021</p>
 <p>Finalizado em 15/11/2021 as 23:22 Horário de Brasília</p>
+<p>Ultimo commit foi feito apenas para anexar o link do Vercel no README.md</p>
 
 <h3>Tecnologias utilizadas:</h3>
 <ul>
