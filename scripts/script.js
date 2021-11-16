@@ -53,7 +53,7 @@ const refreshList = () => {
 const addTask = () => {
     const newTask = inputField.value;                                           // Armazena em uma constante a entrada que foi digitada no campo de texto
 
-    if (newTask === '') {
+    if (newTask === '') {                                                       // Não aceita entrada em branco
         window.alert("Campo não pode estar em branco")
     }
     else {
