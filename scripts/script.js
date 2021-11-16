@@ -53,11 +53,16 @@ const refreshList = () => {
 const addTask = () => {
     const newTask = inputField.value;                                           // Armazena em uma constante a entrada que foi digitada no campo de texto
 
-    listArray = getlocalStorage();
-    listArray.push({ 'task': newTask, 'marked': '' });                          // Adiciona no final do Array a nova tarefa inserida que a constante newTask armazenou
-    setLocalStorage(listArray);
-    refreshList();                                                              // Atualiza novamente os dados inseridos na lista para ser exibido no HTML
-    inputField.value = '';                                                      // Limpa o campo de texto ao inserir a nova tarefa
+    if (newTask === '') {
+        window.alert("Campo não pode estar em branco")
+    }
+    else {
+        listArray = getlocalStorage();
+        listArray.push({ 'task': newTask, 'marked': '' });                          // Adiciona no final do Array a nova tarefa inserida que a constante newTask armazenou
+        setLocalStorage(listArray);
+        refreshList();                                                              // Atualiza novamente os dados inseridos na lista para ser exibido no HTML
+        inputField.value = '';                                                      // Limpa o campo de texto ao inserir a nova tarefa
+    }
 }
 
 

@@ -15,20 +15,14 @@
         <header>
             <h1>TO-DO List | Lista de Afazeres</h1>
         </header>
-
-        <!-- campo de texto para entrada na lista -->
         <div class="inputField">
-            <input id="campoEntrada" name="campoEntrada" type="text" placeholder="Adicione uma tarefa na lista aqui!">
-            <button id="btnAdd">+</button>
-            <!-- <input id="btnClear" type="button" value="Limpar Campo"> -->
+            <input id="inputField" name="inputField" type="text" placeholder="Adicione uma tarefa na lista aqui!" maxlength = "40">
+            <button id="addBtn">+</button>
         </div>
-
         <div class="list">
             <ul id='todoList'></ul>
         </div>
-
     </main>
-
     <footer class="dark center">
         <p>
             <b>TO-DO List</b> is coded by Guilherme Veiga &copy; 2021 &middot;
@@ -36,9 +30,7 @@
             <a href="https://www.linkedin.com/in/guilherme-veiga-98282221b/" target="_blank">LinkedIn</a>
         </p>
     </footer>
-
     <script src="/scripts/script.js"></script>
-
 </body>
 
 </html>

@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
 body {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+    background: linear-gradient(
+        45deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    background-size: 400% 400%;
+    position: relative;
+    animation: changeBackgroundColor 20s ease-in-out infinite;
 }
 
 main {
@@ -39,33 +61,17 @@ main .inputField {
     height: 43px;
     border: none;
     outline: none;
-    background: #8E49E8;
+    background: #282828;
     color: #fff;
     font-size: 35px;
     cursor: pointer;
     border-radius: 3px;
     margin-left: 5px;
+    transition: all .5s linear;
 }
 
-.lista li{
-    list-style: none;
-    height: 45px;
-    line-height: 45px;
-    position: relative;
-    background: #f2f2f2;
-    border-radius: 3px;
-    margin-bottom: 8px;
-    padding: 0 15px;
-}
-
-.lista span{
-    position: absolute;
-    right: 0px;
-    color: #fff;
-    width: 45px;
-    text-align: center;
-    border-radius: 0 3px 3px 0;
-    cursor: pointer;
+.inputField button:hover {
+    background: #696969;
 }
 
 .dark {
@@ -93,47 +99,76 @@ footer p, footer a {
     margin: 0;
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.75rem;
-    transition: color 200ms;
+    transition: all .5s linear;
 }
 
 footer a:hover {
     color: rgba(255, 255, 255, 0.9);
 }
 
-.todoList_item{
+.todoList_item {
     display: flex;
     width: 100%;
     height: 60px;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    box-shadow: 1px 1px 5px var(--secondary-color);
 }
-.todoList_item > div {
+
+.todoList_item>div {
     width: 80%;
 }
+
 .todoList_item:hover {
     cursor: pointer;
-    transition: all .5s ease;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    transition: all .5s linear;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #E8E8E8, #fff);
 }
 
-
-.todoList_item > input[type='text'] {
+.todoList_item>input[type='text'] {
     border: none;
     width: 80%;
-    font: inherit;
 }
 
-.todoList_item > input[type='button'],
-.todoList_item > input[type='checkbox'] {
-    width: 30px;
-    height: 30px;
-    font: inherit;
+.todoList_item>input[type='button'] {
+    width: 60px;
+    height: 43px;
+    border: none;
+    background: #282828;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0px;
+    line-height: 30px;
+    margin-right: 5px;
+    transition: all .5s linear;
 }
 
+.todoList_item>input[type='button']:hover {
+    background: red;
+}
 
-.todoList_item > input[type='checkbox']:checked  + div {
-    text-decoration:line-through;
+.todoList_item>input[type='checkbox'] {
+    width: 25px;
+    height: 25px;
+}
+
+.todoList_item>input[type='checkbox']:checked+div {
+    text-decoration: line-through;
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
